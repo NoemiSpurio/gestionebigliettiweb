@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.btn{
+	background-color: #0B5345;
+	border-color: #ffffff;
+	
+}
+
+.bg-primary{
+	background-color: #0B5345 !important;
+}
+
+.bg-light{
+	background-color: #E9F7EF !important;
+}
+
+.navbar{
+	background-color: #0B5345;
+}
+
+.footer{
+	background-color: #0B5345;
+}
+
+.nav-link{
+	color: #ffffff !important;
+}
+
+.icon-link{
+	color: #0B5345 !important;
+}
