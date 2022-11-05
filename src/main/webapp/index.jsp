@@ -90,7 +90,7 @@
 			        </div>
 			        <h2>Trova Biglietto</h2>
 			        <p>Cerca tra i tuoi biglietti in base alla provenienza, destinazione, giorno della partenza o prezzo.</p>
-			        <a href="PrepareFindByExampleBigliettoServlet" class="icon-link">
+			        <a href="PrepareSearchBigliettoServlet" class="icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>

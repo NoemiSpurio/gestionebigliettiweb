@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import it.prova.gestionebigliettiweb.model.Biglietto;
+
 public interface IBaseDAO<T> {
 
 	public List<T> list() throws Exception;
@@ -16,7 +18,8 @@ public interface IBaseDAO<T> {
 
 	public void delete(T input) throws Exception;
 
-	// questo mi serve per l'injection
 	public void setEntityManager(EntityManager entityManager);
+	
+	public List<Biglietto> findByExample(Biglietto input) throws Exception;
 
 }

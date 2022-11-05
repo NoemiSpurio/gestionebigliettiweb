@@ -3,6 +3,7 @@ package it.prova.gestionebigliettiweb.dao;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 
 import it.prova.gestionebigliettiweb.model.Biglietto;
 
@@ -45,6 +46,22 @@ public class BigliettoDAOImpl implements BigliettoDAO {
 	@Override
 	public void setEntityManager(EntityManager entityManager) {
 		this.entityManager = entityManager;
+	}
+
+	@Override
+	public List<Biglietto> findByExample(Biglietto input) throws Exception {
+		String query = "from Biglietto where 1=1";
+		
+		if(!(input.getProvenienza() == null) && !input.getProvenienza().isBlank())
+			query += " and provenienza like '%" + input.getProvenienza() + "%'";
+		if(!(input.getDestinazione() == null) && !input.getDestinazione().isBlank())
+			query += " and destinazione like '%" + input.getDestinazione() +"%'";
+		if(input.getData() != null)
+			query += " and data = '" + input.getData().toInstant() + "'";
+		if(input.getPrezzo() != 0)
+			query += " and prezzo = '" + String.valueOf(input.getPrezzo()) + "'";
+		
+		return entityManager.createQuery(query, Biglietto.class).getResultList();
 	}
 
 }
