@@ -53,7 +53,7 @@
 				      <div class="container-fluid py-5">
 				        <h1 class="display-5 fw-bold">GESTIONE BIGLIETTI</h1>
 				        <p class="col-md-8 fs-4">Questa applicazione web ti aiuta nella gestione dei tuoi biglietti!</p>
-				        <a class="btn btn-primary btn-lg" href="ListArticoliServlet">Mostra Biglietti</a>
+				        <a class="btn btn-primary btn-lg" href="ListBigliettoServlet">Mostra Biglietti</a>
 				      </div>
 			    </div>
 			    
@@ -68,7 +68,7 @@
 			        </div>
 			        <h2>Lista Biglietti</h2>
 			        <p>Guarda l'elenco dei tuoi biglietti.</p>
-			        <a href="ListArticoliServlet" class="icon-link">
+			        <a href="ListBigliettoServlet" class="icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
@@ -79,7 +79,7 @@
 			        </div>
 			        <h2>Inserisci Nuovo Biglietto</h2>
 			        <p>Inserisci un nuovo biglietto nell'elenco.</p>
-			        <a href="PrepareInsertArticoloServlet" class="icon-link">
+			        <a href="PrepareInsertBigliettoServlet" class="icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
@@ -90,7 +90,7 @@
 			        </div>
 			        <h2>Trova Biglietto</h2>
 			        <p>Cerca tra i tuoi biglietti in base alla provenienza, destinazione, giorno della partenza o prezzo.</p>
-			        <a href="PrepareFindByExampleArticoloServlet" class="icon-link">
+			        <a href="PrepareFindByExampleBigliettoServlet" class="icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
