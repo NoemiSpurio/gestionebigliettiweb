@@ -1,25 +1,25 @@
 @charset "UTF-8";
 
 .btn{
-	background-color: #0B5345;
+	background-color: #9c80da;
 	border-color: #ffffff;
 	
 }
 
 .bg-primary{
-	background-color: #0B5345 !important;
+	background-color: #9c80da !important;
 }
 
 .bg-light{
-	background-color: #E9F7EF !important;
+	background-color: #d0c3ef !important;
 }
 
 .navbar{
-	background-color: #0B5345;
+	background-color: #9c80da;
 }
 
 .footer{
-	background-color: #0B5345;
+	background-color: #9c80da;
 }
 
 .nav-link{
@@ -27,5 +27,5 @@
 }
 
 .icon-link{
-	color: #0B5345 !important;
+	color: #9c80da !important;
 }
