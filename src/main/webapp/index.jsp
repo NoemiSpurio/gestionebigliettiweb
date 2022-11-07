@@ -1,3 +1,4 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <!doctype html>
 <html lang="it" class="h-100" >
 	 <head>
@@ -60,43 +61,46 @@
 			  </div>
 			  
 			  <!--  features di bootstrap 'Columns with icons'  -->
-			  <div class="container px-4 py-5" id="featured-3">
-			    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-			      <div class="feature col">
-			        <div class="feature-icon bg-primary bg-gradient">
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
-			        </div>
-			        <h2>Lista Biglietti</h2>
-			        <p>Guarda l'elenco dei tuoi biglietti.</p>
-			        <a href="ListBigliettoServlet" class="icon-link">
-			          Vai alla funzionalità
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-			        </a>
-			      </div>
-			      <div class="feature col">
-			        <div class="feature-icon bg-primary bg-gradient">
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
-			        </div>
-			        <h2>Inserisci Nuovo Biglietto</h2>
-			        <p>Inserisci un nuovo biglietto nell'elenco.</p>
-			        <a href="PrepareInsertBigliettoServlet" class="icon-link">
-			          Vai alla funzionalità
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-			        </a>
-			      </div>
-			      <div class="feature col">
-			        <div class="feature-icon bg-primary bg-gradient">
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-			        </div>
-			        <h2>Trova Biglietto</h2>
-			        <p>Cerca tra i tuoi biglietti in base alla provenienza, destinazione, giorno della partenza o prezzo.</p>
-			        <a href="PrepareSearchBigliettoServlet" class="icon-link">
-			          Vai alla funzionalità
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
-			        </a>
-			      </div>
-			    </div>
-			  </div>
+			  <c:if test="${userInfo.isAdmin()}">
+			  
+			  	<div class="container px-4 py-5" id="featured-3">
+			    	<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			      	<div class="feature col">
+			        	<div class="feature-icon bg-primary bg-gradient">
+			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> 		
+			        	</div>
+			        	<h2>Lista Biglietti</h2>
+			        	<p>Guarda l'elenco dei tuoi biglietti.</p>
+			        	<a href="ListBigliettoServlet" class="icon-link">
+			          	Vai alla funzionalità
+			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+			        	</a>
+			      	</div>
+			      	<div class="feature col">
+			        	<div class="feature-icon bg-primary bg-gradient">
+			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+			        	</div>
+			        	<h2>Inserisci Nuovo Biglietto</h2>
+			        	<p>Inserisci un nuovo biglietto nell'elenco.</p>
+			        	<a href="PrepareInsertBigliettoServlet" class="icon-link">
+			          	Vai alla funzionalità
+			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+			        	</a>
+			      	</div>
+			      	<div class="feature col">
+			        	<div class="feature-icon bg-primary bg-gradient">
+			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+			        	</div>
+			        	<h2>Trova Biglietto</h2>
+			        	<p>Cerca tra i tuoi biglietti in base alla provenienza, destinazione, giorno della partenza o prezzo.</p>
+			        	<a href="PrepareSearchBigliettoServlet" class="icon-link">
+			          	Vai alla funzionalità
+			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+			        	</a>
+			      	</div>
+			    	</div>
+			  	</div>
+			 </c:if>
 			  
 			</main>
 			

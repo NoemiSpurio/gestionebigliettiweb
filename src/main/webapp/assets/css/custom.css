@@ -15,15 +15,15 @@
 }
 
 .navbar{
-	background-color: #9c80da;
+	background-color: #9c80da !important;
 }
 
 .footer{
-	background-color: #9c80da;
+	background-color: #9c80da !important;
 }
 
 .nav-link{
-	color: #ffffff !important;
+	color: #9c80da !important;
 }
 
 .icon-link{

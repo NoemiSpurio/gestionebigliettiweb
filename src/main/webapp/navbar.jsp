@@ -1,3 +1,4 @@
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <header>
   <!-- Fixed navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
@@ -28,7 +29,14 @@
         </ul>
       </div>
       <div class="col-md-3 text-end">
-        <a  class="btn btn-primary" href="login.jsp">Login</a>
+      	
+      	<c:if test="${userInfo == null}">
+        	<a  class="btn btn-primary" href="login.jsp">Login</a>
+        </c:if>
+        <c:if test="${userInfo != null}">
+        	<p class="navbar-text">Benvenuto ${userInfo.username}!
+            <a class="btn btn-primary" href="<%= request.getContextPath()%>/LogoutServlet">Logout</a></p>
+        </c:if>
       </div>
     </div>
   </nav>
