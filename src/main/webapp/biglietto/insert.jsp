@@ -39,7 +39,7 @@
 							<h6 class="card-title">I campi con <span class="text-danger">*</span> sono obbligatori</h6>
 		
 		
-							<form method="post" action="ExecuteInsertBigliettoServlet" class="row g-3" novalidate="novalidate">
+							<form method="post" action="${pageContext.request.contextPath}/admin/ExecuteInsertBigliettoServlet" class="row g-3" novalidate="novalidate">
 							
 								<div class="col-md-6">
 									<label for="provenienza" class="form-label">Provenienza <span class="text-danger">*</span></label>

@@ -82,7 +82,7 @@
 			        	</div>
 			        	<h2>Inserisci Nuovo Biglietto</h2>
 			        	<p>Inserisci un nuovo biglietto nell'elenco.</p>
-			        	<a href="PrepareInsertBigliettoServlet" class="icon-link">
+			        	<a href="${pageContext.request.contextPath}/admin/PrepareInsertBigliettoServlet" class="icon-link">
 			          	Vai alla funzionalità
 			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        	</a>

@@ -45,7 +45,7 @@
 					    </div>
 					    
 					    <div class='card-footer'>				        
-					        <form method="post" action="ExecuteDeleteBigliettoServlet" class="row g-3" novalidate="novalidate">
+					        <form method="post" action="${pageContext.request.contextPath}/admin/ExecuteDeleteBigliettoServlet" class="row g-3" novalidate="novalidate">
 					        	<input type="hidden" name="idBiglietto" value="${dettaglioBigliettoDaEliminare.id}">
 					        	<button type="submit" name="submit" value="submit" id="submit" class="btn btn-warning">Conferma</button>
 					        </form>

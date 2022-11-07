@@ -35,7 +35,7 @@
 				        <h5>Lista dei risultati</h5> 
 				    </div>
 				    <div class='card-body'>
-				    	<a class="btn btn-primary " href="PrepareInsertBigliettoServlet">Aggiungi biglietto</a>
+				    	<a class="btn btn-primary " href="${pageContext.request.contextPath}/admin/PrepareInsertBigliettoServlet">Aggiungi biglietto</a>
 				    
 				        <div class='table-responsive'>
 				            <table class='table table-striped ' >
@@ -59,8 +59,8 @@
 				                        <td><fmt:formatDate pattern="dd-MM-yyyy" value="${bigliettoItem.data}"/></td>
 				                        <td>
 											<a class="btn  btn-sm btn-outline-secondary" href="ExecuteVisualizzaBigliettoServlet?idBiglietto=${bigliettoItem.id}">Visualizza</a>
-											<a class="btn  btn-sm btn-outline-primary ml-2 mr-2" href="PrepareUpdateBigliettoServlet?idBiglietto=${bigliettoItem.id}">Modifica</a>
-											<a class="btn btn-outline-danger btn-sm" href="PrepareDeleteBigliettoServlet?idBiglietto=${bigliettoItem.id}">Rimuovi</a>
+											<a class="btn  btn-sm btn-outline-primary ml-2 mr-2" href="${pageContext.request.contextPath}/admin/PrepareUpdateBigliettoServlet?idBiglietto=${bigliettoItem.id}">Modifica</a>
+											<a class="btn btn-outline-danger btn-sm" href="${pageContext.request.contextPath}/admin/PrepareDeleteBigliettoServlet?idBiglietto=${bigliettoItem.id}">Rimuovi</a>
 										</td>
 				                    </tr>
 				                    </c:forEach>
