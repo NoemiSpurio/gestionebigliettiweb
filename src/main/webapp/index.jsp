@@ -71,7 +71,7 @@
 			        	</div>
 			        	<h2>Lista Biglietti</h2>
 			        	<p>Guarda l'elenco dei tuoi biglietti.</p>
-			        	<a href="ListBigliettoServlet" class="icon-link">
+			        	<a href="${pageContext.request.contextPath}/ListBigliettoServlet" class="icon-link">
 			          	Vai alla funzionalità
 			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        	</a>
@@ -93,7 +93,7 @@
 			        	</div>
 			        	<h2>Trova Biglietto</h2>
 			        	<p>Cerca tra i tuoi biglietti in base alla provenienza, destinazione, giorno della partenza o prezzo.</p>
-			        	<a href="PrepareSearchBigliettoServlet" class="icon-link">
+			        	<a href="${pageContext.request.contextPath}/PrepareSearchBigliettoServlet" class="icon-link">
 			          	Vai alla funzionalità
 			          	<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        	</a>

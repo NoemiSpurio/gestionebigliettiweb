@@ -52,7 +52,7 @@
 					    </div>
 					    
 					    <div>
-					     	<a href="ListBigliettoServlet" class='btn btn-outline-secondary' style='width:80px'>
+					     	<a href="${pageContext.request.contextPath}/ListBigliettoServlet" class='btn btn-outline-secondary' style='width:80px'>
 					            <i class='fa fa-chevron-left'></i> Back
 					        </a>
 					    </div>

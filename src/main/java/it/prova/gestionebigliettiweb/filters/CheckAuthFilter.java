@@ -20,7 +20,7 @@ public class CheckAuthFilter extends HttpFilter implements Filter {
 
 	private static final String HOME_PATH = "";
 	private static final String[] EXCLUDED_URLS = { "/login.jsp", "/LoginServlet", "/LogoutServlet", "/css/", "/js/",
-			"/footer.jsp", "/header.jsp", "/index.jsp", "/navbar.jsp" };
+			"/footer.jsp", "/header.jsp", "/index.jsp", "/navbar.jsp", "/assets/"};
 	private static final String[] PROTECTED_URLS = { "/admin/" };
 
 	public CheckAuthFilter() {
